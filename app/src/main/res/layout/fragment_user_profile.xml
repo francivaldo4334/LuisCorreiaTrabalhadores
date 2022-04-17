@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigationmenu.fragments.UserProfile"
+    android:paddingBottom="@dimen/padding_main"
+    android:layout_marginBottom="@dimen/bar_size">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bar_size"
+        android:background="@color/color_primary"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/padding_main"
+            android:text="Perfil no Usuáril"
+            android:textColor="@color/snow_white"
+            android:textSize="@dimen/h3"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/bar_size">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/ic_size_max"
+                    android:layout_height="@dimen/ic_size_max"
+                    android:layout_margin="@dimen/padding_main"
+                    android:background="@drawable/border_shadow_oval"
+                    android:elevation="2dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h3"
+                    android:textStyle="bold"
+                    android:layout_margin="@dimen/padding_main"
+                    android:text="Name Completo"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_main"
+                android:layout_margin="@dimen/padding_main"
+                android:background="@drawable/border_shadow_rect">
+                <ImageView
+                    android:layout_width="@dimen/ic_size_max"
+                    android:layout_height="@dimen/ic_size_max"
+                    app:tint="@color/color_primary"
+                    android:src="@drawable/ic_ranking"
+                    android:layout_marginVertical="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/h4"
+                    android:text="avaliações"
+                    android:layout_marginBottom="30dp"/>
+                <br.com.franxdeveloper.trabalhadoresluiscorreia.view.Assess
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/padding_main">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="Contato:"
+                    android:textSize="@dimen/h4"
+                    android:textStyle="bold"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/padding_main">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="@dimen/ic_size_minimal"
+                            android:layout_height="@dimen/ic_size_minimal"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_email"
+                            app:tint="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="27dp"
+                            android:text="Email@gmail.com"
+                            android:textSize="@dimen/h4" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="@dimen/ic_size_minimal"
+                            android:layout_height="@dimen/ic_size_minimal"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_phone"
+                            app:tint="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="27dp"
+                            android:text="(xx)000000000"
+                            android:textSize="@dimen/h4" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="@dimen/ic_size_minimal"
+                            android:layout_height="@dimen/ic_size_minimal"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_baseline_location_on_24"
+                            app:tint="@color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="27dp"
+                            android:text="Rua,Bairro,Numero,Cidade"
+                            android:textSize="@dimen/h4" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tags de pesquisa:"
+                        android:textSize="@dimen/h4"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/padding_main"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="@dimen/ic_size"
+        android:layout_height="@dimen/ic_size"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/ic_size"
+        android:background="@drawable/background_oval"
+        android:src="@drawable/ic_edit"
+        android:tint="@color/snow_white"
+        android:layout_marginEnd="@dimen/padding_main"/>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="@dimen/ic_size"
+        android:layout_height="@dimen/ic_size"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/padding_main"
+        android:background="@drawable/background_oval"
+        android:onClick="onCV"
+        android:src="@drawable/ic_page_cv"
+        android:tint="@color/snow_white" />
+</RelativeLayout>

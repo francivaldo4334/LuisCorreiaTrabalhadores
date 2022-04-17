@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigationmenu.fragments.Search"
+    android:background="@drawable/background_gradient"
+    android:layout_marginBottom="@dimen/bar_size">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="234dp"
+            android:layout_height="66dp"
+            android:text="O que você esta procurando?"
+            android:textColor="@color/snow_white"
+            android:textSize="@dimen/h2"
+            android:textStyle="italic" />
+
+        <RelativeLayout
+            android:layout_width="234dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:onClick="onSearch"
+                android:layout_width="@dimen/ic_size"
+                android:layout_height="@dimen/ic_size"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_search"
+                app:tint="@color/snow_white" />
+
+            <EditText
+                android:layout_width="156dp"
+                android:layout_height="@dimen/ic_size"
+                android:background="@drawable/background_radio_11"
+                android:backgroundTint="@color/snow_white"
+                android:textColor="@color/black"
+                android:inputType="text"
+                android:textSize="@dimen/h2"
+                android:textStyle="italic"
+                android:paddingHorizontal="@dimen/padding_main" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

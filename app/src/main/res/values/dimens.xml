@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="h1">26sp</dimen>
+    <dimen name="h2">26sp</dimen>
+    <dimen name="h3">21sp</dimen>
+    <dimen name="h4">16sp</dimen>
+    <dimen name="h5">10sp</dimen>
+
+    <dimen name="ic_size">48dp</dimen>
+    <dimen name="ic_padding_1">4dp</dimen>
+    <dimen name="ic_padding_2">6dp</dimen>
+    <dimen name="ic_padding_3">12dp</dimen>
+    <dimen name="ic_padding_4">15dp</dimen>
+    <dimen name="bar_size">48dp</dimen>
+    <dimen name="padding_main">16dp</dimen>
+    <dimen name="ic_size_minimal">24dp</dimen>
+    <dimen name="ic_size_max">72dp</dimen>
+    <dimen name="border_shadow_size">1.5dp</dimen>
+    <dimen name="photo_size">90dp</dimen>
+</resources>

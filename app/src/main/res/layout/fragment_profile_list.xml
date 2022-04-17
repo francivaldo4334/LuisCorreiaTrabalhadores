@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigationmenu.fragments.ProfileList"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/bar_size">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bar_size"
+        android:background="@color/color_primary"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/padding_main"
+            android:text="Lista de Perfis"
+            android:textColor="@color/snow_white"
+            android:textSize="@dimen/h3"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:paddingHorizontal="@dimen/padding_main">
+        <TextView
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/txt_requests"
+            android:id="@+id/txt_friends"
+                android:layout_width="0dp"
+                app:layout_constraintHorizontal_weight="1"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Amigos"
+            android:textSize="@dimen/h3"
+            android:textColor="@color/color_primary"
+            android:layout_alignParentStart="true"
+            android:paddingVertical="@dimen/ic_padding_1"/>
+        <TextView
+            android:paddingVertical="@dimen/ic_padding_1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txt_friends"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/txt_requests"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintHorizontal_weight="1"
+            android:textAlignment="center"
+            android:text="Solicitações"
+            android:textSize="@dimen/h3"
+            android:layout_alignParentEnd="true"
+
+            android:background="@drawable/background_radio_11" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/black"
+        android:layout_marginTop="15dp"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/padding_main"/>
+</LinearLayout>
